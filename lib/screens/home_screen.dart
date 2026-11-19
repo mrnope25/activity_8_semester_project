@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../widgets/app_button.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -6,12 +7,14 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(title: const Text('Your System')), // TODO: palitan
-        body: Center(
-          child: AppButton(
-            label: 'Open Login',
-            onPressed: () => Navigator.pushNamed(context, '/login'),
-          ),
-        ),
-      );
+    appBar: AppBar(
+      title: const Text('Skin Condition Classification and Screening System'),
+    ),
+    body: Center(
+      child: AppButton(
+        label: 'Open Login',
+        onPressed: () => Navigator.pushNamed(context, '/login'),
+      ),
+    ),
+  );
 }

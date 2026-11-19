@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'screens/home_screen.dart';
 import 'screens/login_screen.dart';
 
@@ -7,16 +8,16 @@ class SemesterProjectApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Your Approved System Title', // TODO: palitan ng actual system title
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
-          useMaterial3: true,
-        ),
-        initialRoute: '/',
-        routes: {
-          '/': (_) => const HomeScreen(),
-          '/login': (_) => const LoginScreen(),
-        },
-      );
+    debugShowCheckedModeBanner: false,
+    title: 'Skin Condition Classification and Screening System',
+    theme: ThemeData(
+      colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+      useMaterial3: true,
+    ),
+    initialRoute: '/',
+    routes: {
+      '/': (_) => const HomeScreen(),
+      '/login': (_) => const LoginScreen(),
+    },
+  );
 }
