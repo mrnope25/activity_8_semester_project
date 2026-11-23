@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppButton extends StatelessWidget {
   final String label;
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed; // null = disabled (used to prevent duplicate submits)
 
   const AppButton({super.key, required this.label, required this.onPressed});
 

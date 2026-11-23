@@ -11,9 +11,19 @@ class HomeScreen extends StatelessWidget {
       title: const Text('Skin Condition Classification and Screening System'),
     ),
     body: Center(
-      child: AppButton(
-        label: 'Open Login',
-        onPressed: () => Navigator.pushNamed(context, '/login'),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          AppButton(
+            label: 'Open Login',
+            onPressed: () => Navigator.pushNamed(context, '/login'),
+          ),
+          const SizedBox(height: 12),
+          AppButton(
+            label: 'Open Symptom Report',
+            onPressed: () => Navigator.pushNamed(context, '/report'),
+          ),
+        ],
       ),
     ),
   );
