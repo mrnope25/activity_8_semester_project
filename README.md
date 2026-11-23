@@ -55,4 +55,4 @@ lib/
 
 ## Checkpoints
 - Activity 8: Date October 13, 2026 | Commit: 862b764 ("Initial Flutter Web project")
-- Activity 9: Commit: ______ ("Add report form and Flutter UI states")
+- Activity 9: Commit: 579aaf3 ("Add report form and Flutter UI states")
